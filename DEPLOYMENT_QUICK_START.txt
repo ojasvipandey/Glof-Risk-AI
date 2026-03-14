@@ -1,0 +1,56 @@
+================================================================================
+          🚀 QUICK DEPLOYMENT GUIDE - GLOF-RISK AI
+================================================================================
+
+FASTEST WAY TO DEPLOY (Choose One):
+
+METHOD 1: Automated Script (Windows)
+-------------------------------------
+1. Double-click: deploy.ps1
+2. Follow the prompts
+3. Done!
+
+METHOD 2: GitHub Desktop (Easiest GUI)
+---------------------------------------
+1. Download: https://desktop.github.com/
+2. Install and sign in
+3. File → Add Local Repository
+4. Select: C:\Users\Lenovo!\Desktop\GLOF RISK AI
+5. Publish repository (make it PUBLIC)
+6. Go to: https://share.streamlit.io
+7. Sign in with GitHub
+8. New app → Select your repo → Deploy
+9. Done! Your app is live!
+
+METHOD 3: Command Line
+---------------------
+1. Open PowerShell in project folder
+2. Run these commands:
+
+   git init
+   git add .
+   git commit -m "Deploy GLOF-RISK AI"
+   git remote add origin https://github.com/YOUR_USERNAME/glof-risk-ai.git
+   git branch -M main
+   git push -u origin main
+
+3. Go to: https://share.streamlit.io
+4. Sign in → New app → Select repo → Deploy
+5. Done!
+
+================================================================================
+                    YOUR APP WILL BE LIVE AT:
+================================================================================
+
+https://YOUR-APP-NAME.streamlit.app
+
+Share this link with anyone!
+
+================================================================================
+                    NEED DETAILED INSTRUCTIONS?
+================================================================================
+
+See: STREAMLIT_CLOUD_SETUP.md (Complete step-by-step guide)
+See: DEPLOY_TO_STREAMLIT_CLOUD.md (Detailed instructions)
+
+================================================================================

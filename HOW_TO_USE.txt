@@ -1,0 +1,133 @@
+================================================================================
+                    GLOF-RISK AI - HOW TO USE
+================================================================================
+
+QUICKEST WAY TO START (Windows):
+--------------------------------
+1. Double-click the file: RUN_LOCALLY.bat
+2. Wait for it to install dependencies (first time only)
+3. Your browser will open automatically at: http://localhost:8501
+
+OR USE COMMAND LINE:
+-------------------
+1. Open Command Prompt (Win + R, type "cmd", press Enter)
+2. Type these commands:
+
+   cd "C:\Users\Lenovo!\Desktop\GLOF RISK AI"
+   pip install -r requirements.txt
+   streamlit run app.py
+
+3. Browser will open at: http://localhost:8501
+
+================================================================================
+                    DEPLOY ONLINE (FREE - Streamlit Cloud)
+================================================================================
+
+STEP 1: Create GitHub Account
+------------------------------
+- Go to: https://github.com/signup
+- Sign up for free account
+
+STEP 2: Upload Your Code
+-------------------------
+Option A - Using GitHub Desktop (Easiest):
+1. Download: https://desktop.github.com/
+2. Install and sign in
+3. Click "File" → "Add Local Repository"
+4. Select folder: C:\Users\Lenovo!\Desktop\GLOF RISK AI
+5. Click "Publish repository"
+
+Option B - Using GitHub Website:
+1. Go to: https://github.com/new
+2. Create new repository named "glof-risk-ai"
+3. Upload all files using web interface
+
+STEP 3: Deploy on Streamlit Cloud
+----------------------------------
+1. Go to: https://share.streamlit.io
+2. Sign in with GitHub
+3. Click "New app"
+4. Select your repository: YOUR_USERNAME/glof-risk-ai
+5. Branch: main
+6. Main file: app.py
+7. Click "Deploy"
+8. Wait 2-3 minutes
+9. Your app is live at: https://YOUR-APP-NAME.streamlit.app
+
+================================================================================
+                    ACCESS YOUR APP
+================================================================================
+
+LOCAL ACCESS (Your Computer Only):
+-----------------------------------
+URL: http://localhost:8501
+- Only works when app is running
+- Only you can access it
+
+ONLINE ACCESS (Anyone, Anywhere):
+----------------------------------
+URL: https://YOUR-APP-NAME.streamlit.app
+- Always available
+- Share link with anyone
+- Works on phone, tablet, computer
+
+================================================================================
+                    USING THE APPLICATION
+================================================================================
+
+1. Select a Glacial Lake from the dropdown (left sidebar)
+2. Select a District for analysis
+3. Set Rainfall Intensity (mm/day) - default: 50
+4. Set Temperature Anomaly (°C) - default: 0.0
+5. Click "Calculate Risk" button
+6. View results:
+   - Real-time monitoring
+   - Physics calculations
+   - Risk assessment (gauge chart)
+   - Village exposure analysis
+   - Evacuation plan
+   - AI disaster advisor
+   - Interactive map
+
+================================================================================
+                    TROUBLESHOOTING
+================================================================================
+
+Problem: "Python not found"
+Solution: Install Python from https://www.python.org/downloads/
+          Make sure to check "Add to PATH" during installation
+
+Problem: "Module not found" or import errors
+Solution: Run: pip install -r requirements.txt
+
+Problem: Port 8501 already in use
+Solution: Close other Streamlit apps or use:
+          streamlit run app.py --server.port 8502
+
+Problem: Map not displaying
+Solution: Check internet connection (maps need online tiles)
+
+Problem: App won't start
+Solution: Make sure you're in the correct folder:
+          cd "C:\Users\Lenovo!\Desktop\GLOF RISK AI"
+
+================================================================================
+                    NEED MORE HELP?
+================================================================================
+
+- Full Documentation: See README.md
+- Quick Start Guide: See QUICKSTART.md
+- Deployment Details: See DEPLOYMENT.md
+- Step-by-Step: See START_APP.md
+
+================================================================================
+                    DIRECT LINKS
+================================================================================
+
+Run Locally:        http://localhost:8501 (when app is running)
+Deploy Online:      https://share.streamlit.io
+Python Download:    https://www.python.org/downloads/
+GitHub Signup:      https://github.com/signup
+Streamlit Docs:     https://docs.streamlit.io
+
+================================================================================
