@@ -39,6 +39,6 @@ MODELS_DIR = "models"
 # Monitoring update interval (seconds)
 MONITORING_INTERVAL = 600  # 10 minutes
 
-# Default values
-DEFAULT_RAINFALL = 50  # mm/day
+# Default values (must be floats for Streamlit number_input)
+DEFAULT_RAINFALL = 50.0  # mm/day
 DEFAULT_TEMPERATURE_ANOMALY = 0.0  # °C
