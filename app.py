@@ -90,24 +90,23 @@ selected_district = st.sidebar.selectbox(
     index=0
 )
 
-# Rainfall input
+# Rainfall input (force all args to float to avoid MixedNumericTypes)
 rainfall_intensity = st.sidebar.number_input(
     "Rainfall Intensity (mm/day)",
-    min_value=0.0,
-    max_value=500.0,
-    value=DEFAULT_RAINFALL,
-    step=5.0
+    min_value=float(0.0),
+    max_value=float(500.0),
+    value=float(DEFAULT_RAINFALL),
+    step=float(5.0),
 )
 
-# Temperature anomaly
+# Temperature anomaly (also ensure pure float types)
 temperature_anomaly = st.sidebar.number_input(
     "Temperature Anomaly (°C)",
-    min_value=-5.0,
-    max_value=10.0,
-    value=DEFAULT_TEMPERATURE_ANOMALY,
-    step=0.5
+    min_value=float(-5.0),
+    max_value=float(10.0),
+    value=float(DEFAULT_TEMPERATURE_ANOMALY),
+    step=float(0.5),
 )
-
 # Calculate button
 calculate_button = st.sidebar.button("🚀 Calculate Risk", type="primary", use_container_width=True)
 
