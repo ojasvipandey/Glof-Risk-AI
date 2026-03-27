@@ -136,16 +136,18 @@ if lake_data:
             villages_list = data_loader.get_villages_in_district(selected_district)
             villages_dict = villages_list.to_dict('records') if len(villages_list) > 0 else []
             
+            # Lake elevation used in multiple downstream calculations
+            lake_elevation = float(lake_data.get('elevation', 4000))
+
             # Add elevation estimates if missing
             for village in villages_dict:
-                if 'elevation' not in village:
+                if 'elevation' not in village or pd.isna(village.get('elevation')):
                     village['elevation'] = lake_elevation - 500  # Rough estimate
             
             # Geospatial analysis
             geo_analysis = GeospatialAnalysis()
             
             # Calculate terrain slope (simplified - using average)
-            lake_elevation = lake_data.get('elevation', 4000)
             avg_slope = 15.0  # Default slope
             
             # ML breach prediction
